@@ -12,13 +12,14 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="w-[500px] mx-auto text-center mt-10">
       <input
         type="text"
-        className="border"
+        className="border px-2 py-1"
         onChange={(e) => setBatch(e.target.value)}
       />
-      <button onClick={handleSubmit} className="bg-teal-300">
+      <br />
+      <button onClick={handleSubmit} className="bg-teal-300 mt-2 px-2 py-1">
         Submit
       </button>
       <Test />

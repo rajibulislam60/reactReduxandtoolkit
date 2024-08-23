@@ -3,9 +3,10 @@ import { useSelector } from "react-redux";
 
 const Test = () => {
     let data = useSelector((state) => state.userInfo.value);
+    
   return (
     <div>
-      <h1>Batch: {data}</h1>
+      <h2 className='mt-[70px]'>Batch: {data}</h2>
     </div>
   );
 }
