@@ -6,7 +6,7 @@ const Test = () => {
     
   return (
     <div>
-      <h2 className='mt-[70px]'>Batch: {data}</h2>
+      <h1 className='mt-10 mb-3'>Full Name: {data}</h1>
     </div>
   );
 }
