@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  value: null,
+  fullName: "rajibul islam",
+  batch: "mern 2308"
 };
 
 export const userSlice = createSlice({
@@ -9,7 +10,9 @@ export const userSlice = createSlice({
   initialState,
   reducers: {
     userLoginInfo: (state, action) => {
-        state.value = action.payload;
+      let payload = action.payload
+        state.fullName=payload.fullName;
+        state.batch=payload.batch;
     },
   },
 });
